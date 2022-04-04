@@ -1,30 +1,38 @@
 import React from "react";
-import Header from "./components/Header"
-import Feed from "./components/Feed"
-import Ranking from "./components/Ranking"
-import { makeStyles } from "@material-ui/styles"
+import "./components/style.css";
+import Header from "./components/Header";
+import Feed from "./components/Feed";
+import { makeStyles } from "@material-ui/styles";
+import { Toolbar } from "@material-ui/core";
+import { Container } from "@mui/material";
+import { Box } from "@mui/material";
 
 const useStyles = makeStyles({
-  root:  {
-    display: 'flex',
-    flexDirection: 'column'
+  root: {
+    display: "flex",
+    flexDirection: "column",
   },
   main: {
-    height: '100vh',
-    display: 'flex',
-    width: '1200px',
-    margin: '0 auto',
-  }
-})
+    height: "100vh",
+    padding: 24,
+  },
+  toolbar: {
+    minHeight: "64px",
+  },
+});
 
 function Home() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-        <Header/>
+      <Header />
+      <Toolbar className="toolbar" />
       <main className={classes.main}>
-        <Feed/>
-        <Ranking/>
+        <Container maxWidth="lg">
+          <Box display="flex">
+            <Feed />
+          </Box>
+        </Container>
       </main>
     </div>
   );

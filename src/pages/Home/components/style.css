@@ -11,8 +11,7 @@
 .toolbar {
   display: flex;
   align-items: center;
-  height: 64px;
-  left: 0px;
+  min-height: 64px;
   border-bottom: 1px solid #ff7575;
   justify-content: space-between;
   padding: 0 24px;
@@ -35,7 +34,7 @@
 .main {
   height: 100vh;
   display: flex;
-  width: 1200px;
+  width: 1280px;
   margin: 0 auto;
 }
 
@@ -46,7 +45,12 @@
 }
 
 .ranking {
-  width: 350px;
-  background: blue;
-  padding: 24px;
+  position: absolute;
+  width: 400px;
+  height: 420px;
+  left: 1042px;
+  top: 254px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 0px 10px 10px 10px;
 }

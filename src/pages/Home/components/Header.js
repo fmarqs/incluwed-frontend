@@ -4,8 +4,7 @@ import { makeStyles } from "@material-ui/styles";
 import { Button } from "@material-ui/core";
 import { AppBar } from "@material-ui/core";
 import { Toolbar } from "@material-ui/core";
-import Avatar from '@mui/material/Avatar';
-
+import Avatar from "@mui/material/Avatar";
 
 const useStyles = makeStyles({
   appBar: {
@@ -31,7 +30,7 @@ function Header() {
         </div>
         <div>
           <Button>
-          <Avatar alt="Fernando Marques" src="/" />
+            <Avatar alt="Fernando Marques" src="/" />
           </Button>
         </div>
       </Toolbar>
