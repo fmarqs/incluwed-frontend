@@ -19,8 +19,7 @@ function PostCard({ post }) {
             <Typography variant="caption" className="typography">
               {post.author.username}
             </Typography>
-            </div>
-            <div>
+
             <Typography variant="caption" className="typography">
               {post.date}
             </Typography>

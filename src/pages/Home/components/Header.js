@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { makeStyles } from "@mui/base";
+import { makeStyles } from "@material-ui/styles"
 import { Button } from "@mui/material";
 import { AppBar } from "@mui/material";
 import { Toolbar } from "@mui/material";
@@ -24,6 +24,7 @@ function Header() {
         background: "#F6F2E6",
       }}
     >
+    <Toolbar className="toolbar">  
         <div>
           <span className="titleHeader"> INCLUWED</span>
         </div>
@@ -32,7 +33,7 @@ function Header() {
             <Avatar alt="Fernando Marques" src="/" />
           </Button>
         </div>
-      </Toolbar>
+    </Toolbar>  
     </AppBar>
   );
 }

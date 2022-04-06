@@ -2,7 +2,9 @@ import React from "react";
 import Header from "./components/Header"
 import Feed from "./components/Feed"
 import Ranking from "./components/Ranking"
-import { makeStyles } from "@mui/base"
+import { makeStyles } from "@material-ui/styles"
+import { Container } from "@mui/material"
+import { Box } from "@mui/material"
 
 const useStyles = makeStyles({
   root: {
