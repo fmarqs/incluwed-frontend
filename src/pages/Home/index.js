@@ -1,11 +1,8 @@
 import React from "react";
-import "./components/style.css";
-import Header from "./components/Header";
-import Feed from "./components/Feed";
-import { makeStyles } from "@material-ui/styles";
-import { Toolbar } from "@material-ui/core";
-import { Container } from "@mui/material";
-import { Box } from "@mui/material";
+import Header from "./components/Header"
+import Feed from "./components/Feed"
+import Ranking from "./components/Ranking"
+import { makeStyles } from "@mui/base"
 
 const useStyles = makeStyles({
   root: {
@@ -13,20 +10,22 @@ const useStyles = makeStyles({
     flexDirection: "column",
   },
   main: {
-    height: "100vh",
-    padding: 24,
+    height: '100vh',
+    display: 'flex',
+    width: '1280px',
+    margin: '0 auto',
   },
   toolbar: {
-    minHeight: "64px",
-  },
-});
+    minHeight: '64px',
+  }
+})
 
 function Home() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <Header />
-      <Toolbar className="toolbar" />
+        <Header/>
+        <div className={classes.toolbar}> </div>
       <main className={classes.main}>
         <Container maxWidth="lg">
           <Box display="flex">

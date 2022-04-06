@@ -1,10 +1,10 @@
 import React from "react";
 import "./style.css";
-import { makeStyles } from "@material-ui/styles";
-import { Button } from "@material-ui/core";
-import { AppBar } from "@material-ui/core";
-import { Toolbar } from "@material-ui/core";
-import Avatar from "@mui/material/Avatar";
+import { makeStyles } from "@mui/base";
+import { Button } from "@mui/material";
+import { AppBar } from "@mui/material";
+import { Toolbar } from "@mui/material";
+import Avatar from '@mui/material/Avatar';
 
 const useStyles = makeStyles({
   appBar: {
@@ -24,7 +24,6 @@ function Header() {
         background: "#F6F2E6",
       }}
     >
-      <Toolbar className="toolbar">
         <div>
           <span className="titleHeader"> INCLUWED</span>
         </div>
