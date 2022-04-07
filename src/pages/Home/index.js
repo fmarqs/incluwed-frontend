@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "./components/Header"
 import Feed from "./components/Feed"
-import Ranking from "./components/Ranking"
 import { makeStyles } from "@material-ui/styles"
+import { Toolbar } from "@material-ui/core"
 import { Container } from "@mui/material"
 import { Box } from "@mui/material"
 
@@ -16,9 +16,6 @@ const useStyles = makeStyles({
     display: 'flex',
     width: '1280px',
     margin: '0 auto',
-  },
-  toolbar: {
-    minHeight: '64px',
   }
 })
 
@@ -27,7 +24,7 @@ function Home() {
   return (
     <div className={classes.root}>
         <Header/>
-        <div className={classes.toolbar}> </div>
+        <Toolbar className="toolbar"/>
       <main className={classes.main}>
         <Container maxWidth="lg">
           <Box display="flex">
