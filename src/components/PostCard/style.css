@@ -1,12 +1,10 @@
 .root {
     margin-bottom: 2em;
+    display: block;
+    width: 800px;
 }
 
 .subheader {
     display: flex;
     align-items: center;
-}
-
-.typography {
-    margin-right: 1em;
 }
