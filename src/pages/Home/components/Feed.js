@@ -1,5 +1,6 @@
 import React from "react";
 import PostCard from "../../../components/PostCard";
+import { makeStyles } from "@material-ui/core/styles";
 
 const posts = [
   {
