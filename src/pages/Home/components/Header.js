@@ -10,6 +10,9 @@ const useStyles = makeStyles({
   appBar: {
     boxShadow: "none",
   },
+  grow: {
+    flexGrow: 1
+  }
 });
 
 function Header() {
@@ -20,15 +23,12 @@ function Header() {
       className={classes.appBar}
       position="fixed"
       color="inherit"
-      style={{
-        background: "#F6F2E6",
-      }}
     >
-    <Toolbar className="toolbar">  
-
+    <Toolbar>  
         <div>
           <span className="titleHeader"> INCLUWED</span>
         </div>
+        <div className={classes.grow}/>
         <div>
           <Button>
             <Avatar alt="Fernando Marques" src="/" />

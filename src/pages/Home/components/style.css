@@ -1,5 +1,5 @@
 .home {
-  background: #f6f2e6;
+  background: #F9F9F9;
 }
 
 .header {
@@ -12,7 +12,6 @@
   display: flex;
   align-items: center;
   min-height: 64px;
-  border-bottom: 1px solid #ff7575;
   justify-content: space-between;
   padding: 0 24px;
 }
@@ -26,9 +25,8 @@
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
-  line-height: 50px;
   letter-spacing: 0.4em;
-  color: #ff7575;
+  color: #172668;
 }
 
 .main {
@@ -36,21 +34,4 @@
   display: flex;
   width: 1280px;
   margin: 0 auto;
-}
-
-.feed {
-  background: yellow;
-  width: 100%;
-  padding: 24px;
-}
-
-.ranking {
-  position: absolute;
-  width: 400px;
-  height: 420px;
-  left: 1042px;
-  top: 254px;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  border-radius: 0px 10px 10px 10px;
 }

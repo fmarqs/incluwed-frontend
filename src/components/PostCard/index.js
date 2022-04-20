@@ -8,6 +8,9 @@ import CardMedia from "@material-ui/core/CardMedia";
 import CardActions from "@material-ui/core/CardActions";
 import Typography from "@material-ui/core/Typography";
 import Avatar from "@material-ui/core/Avatar";
+import FavoriteIcon from "@material-ui/icons/Favorite";
+import MessageIcon from "@material-ui/icons/Message";
+import IconButton from "@material-ui/core/IconButton";
 
 const useStyles = makeStyles((theme) => ({
   caption: {
@@ -23,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     widht: "100%",
     maxWidht: "100%",
     margin: "0 auto",
-  },
+  }
 }));
 
 function PostCard({ post }) {
@@ -54,7 +57,20 @@ function PostCard({ post }) {
         </Typography>
         <CardMedia component="img" alt="image post" height="300" image={post.image} />
       </CardContent>
-      <CardActions></CardActions>
+      <CardActions disableSpacing>
+        <IconButton arial-label="like">
+          <FavoriteIcon/>
+          <Typography style={{cursor:"pointer"}} color="textSecondary" variant="body2">
+          {"10"}
+          </Typography>
+        </IconButton>
+        <IconButton arial-label="comment">
+          <MessageIcon/>
+          <Typography style={{cursor:"pointer"}} color="textSecondary" variant="body2">
+          {"30"}
+          </Typography>
+        </IconButton>
+      </CardActions>
     </Card>
   );
 }
