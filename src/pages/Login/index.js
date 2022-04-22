@@ -1,8 +1,15 @@
 import React from 'react';
+import Header from "./components/Header"
+import LineHeader from './components/LineHeader';
+import Logo from '../../components/PostCard/Logo';
 
 function Login(){
     return (
-        <h1>Login</h1>
+    <div>
+        <Header/> 
+        <LineHeader/>
+        <Logo/>
+    </div>
     )
 }
 
