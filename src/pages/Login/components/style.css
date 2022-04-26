@@ -1,0 +1,198 @@
+* {
+  background: #ffffff;
+}
+
+.titleHeader {
+  width: 220px;
+  height: 45px;
+  left: 37px;
+  top: 18px;
+  font-family: "Secular One", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 0.4em;
+  color: #172668;
+}
+
+.lineHeader {
+  position: fixed; 
+  width: 1440px;
+  height: 0px;
+  left: 0px;
+  top: 73px;
+
+  border-bottom: 5px solid #172668;
+}
+
+.logo {
+  position: relative;
+  width: 369px;
+  height: 395px;
+  left: 199px;
+  top: 173px;
+
+  background: url("./images/logo-incluwed.png") no-repeat;
+  background-size: 395px 369px;
+}
+
+.box-form {
+
+  position: absolute;
+  width: 400px;
+  height: 444.44px;
+  left: 767px;
+  top: 173px;
+
+  background: #fffdfd;
+  border: 5px solid #172668;
+  box-sizing: border-box;
+  border-radius: 40px 40px 70px 70px;
+}
+
+.box-header {
+
+  position: absolute;
+  width: 400px;
+  height: 40px;
+  left: -5px;
+  top: -5px;
+  
+  background: #3498db;
+  border-radius: 70px 70px 0px 0px;
+}
+
+.box-header section {
+  position: absolute;
+  width: 94px;
+  height: 38px;
+  left: 153px;
+  top: 0px;
+
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 38px;
+  /* identical to box height */
+
+  letter-spacing: 0.2em;
+
+  background: none;
+  color: #172668;
+}
+
+.formulario {
+  /* position: relative; */
+  margin: 0px;
+}
+
+.login {
+  position: absolute;
+  width: 306px;
+  height: 51.75px;
+  left: 47px;
+  top: 89px;
+
+  background: #ffffff;
+  border: 2px solid #172668;
+  box-sizing: border-box;
+  border-radius: 70px;
+}
+
+.senha {
+  position: absolute;
+  width: 306px;
+  height: 51.75px;
+  left: 47px;
+  top: 184px;
+
+  background: #fffdfd;
+  border: 2px solid #172668;
+  box-sizing: border-box;
+  border-radius: 70px;
+}
+
+.login::placeholder,
+.senha::placeholder {
+  width: 200px;
+  height: 38px;
+  left: 862px;
+  top: 283px;
+
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 38px;
+  /* identical to box height */
+
+  color: rgba(0, 0, 0, 0.4);
+}
+
+
+.recuperar-senha {
+
+  position: absolute;
+  width: 316px;
+  height: 27px;
+  left: 69px;
+  top: 259px;
+
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 10px;
+  /* or 40% */
+
+  letter-spacing: 0.1em;
+
+  color: #172668;
+}
+
+.login-botao {
+  position: absolute;
+  width: 208px;
+  height: 39.94px;
+
+  background: #172668;
+  border-radius: 70px;
+}
+
+
+.login-botao section {
+  position: relative;
+  width: 102px;
+  height: 38px;
+  left: 0px;
+  top: 0px;
+
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 38px;
+  /* identical to box height */
+
+  background: none;
+  color: #d3e0ea;
+}
+
+.entrar {
+  left: 96px;
+  top: 300px;
+
+}
+
+.cadastrar {
+  left: 96px;
+  top: 350px;
+  
+
+}
+
+.cadastrar section {
+  width: 190px;
+  font-size: 25px;
+}
