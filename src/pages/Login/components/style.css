@@ -151,19 +151,17 @@
   color: #172668;
 }
 
-.botao-entrar {
+.login-botao {
   position: absolute;
   width: 208px;
   height: 39.94px;
-  left: 96px;
-  top: 328px;
 
   background: #172668;
   border-radius: 70px;
 }
 
 
-.botao-entrar section {
+.login-botao section {
   position: relative;
   width: 102px;
   height: 38px;
@@ -179,4 +177,22 @@
 
   background: none;
   color: #d3e0ea;
+}
+
+.entrar {
+  left: 96px;
+  top: 300px;
+
+}
+
+.cadastrar {
+  left: 96px;
+  top: 350px;
+  
+
+}
+
+.cadastrar section {
+  width: 190px;
+  font-size: 25px;
 }
