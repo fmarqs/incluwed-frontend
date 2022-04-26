@@ -1,0 +1,24 @@
+.button-ranking {
+    position: absolute;
+    width: 167px;
+    height: 40px;
+    left: 1042px;
+    top: 213px;
+
+    background: #3498DB;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.font-style {
+    position: absolute;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 38px;
+
+    color: #172668;
+
+}
