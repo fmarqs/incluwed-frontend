@@ -2,9 +2,16 @@
     margin-bottom: 2em;
     display: block;
     width: 800px;
+    margin-right: 70px;
+    border: 1px solid #172668;
+
 }
 
 .subheader {
     display: flex;
     align-items: center;
+}
+
+.message {
+    height: auto;
 }
