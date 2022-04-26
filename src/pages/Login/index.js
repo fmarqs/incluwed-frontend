@@ -12,7 +12,7 @@ function Login(){
     console.log("largura:" + largura)
 
     return (
-    <div>
+    <div className='body-login'>
         <Header/> 
         <LineHeader/>
         <Logo/>
