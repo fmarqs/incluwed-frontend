@@ -6,16 +6,12 @@ function Form() {
     <div className="box-form">
       <section className="box-header"><section>LOGIN</section></section>
       
-      <form>
+      <form className="formulario">
         <input className="login" placeholder="Digite seu email"></input>
         <input className="senha" placeholder="Digite sua senha"></input>
-        <section className="recuperar-senha"><section>Esqueceu sua senha?</section></section>
-        <section className="botao-entrar"><section>ENTRAR</section></section>
+        <a className="recuperar-senha">Esqueceu sua senha?</a>
+        <button className="botao-entrar"><section>ENTRAR</section></button>
       </form> 
-
-      
-{/*       
-      <button></button> */}
 
     </div>
   );
