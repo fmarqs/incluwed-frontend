@@ -4,10 +4,12 @@ import "./style.css";
 
 function Form() {
   return (
-    <div className="box-form">
+    <div id="box-form">
 
-      <section className="box-header"><section>LOGIN</section></section>
-      
+      {/* <section className="box-header"><section>LOGIN</section></section> */}
+      <div id="header-form-title"></div>
+      <div id="header-form-logo"></div>
+
       <form className="formulario">
         <input id="login" className="login" placeholder="Digite seu email"></input>
         <input id="senha" className="senha" placeholder="Digite sua senha"></input>
@@ -22,3 +24,8 @@ function Form() {
 }
 
 export default Form;
+
+//criar tela
+//receber parametros
+//com os forms 
+//requisiçao no back
