@@ -1,32 +1,19 @@
-import React, {useState} from 'react';
-import Header from "./components/Header"
-import LineHeader from "./components/LineHeader";
-import Logo from "./components/Logo"
-import Form from './components/Form';
+import React, { useState, useContext } from 'react';
 import './components/style.css'
-import axios from 'axios';
-import authService from '../../services/authService';
-
-
+import { AuthContext }  from '../../services/auth';
 
 function Login(){
+    
+    const { authenticated, login } = useContext(AuthContext)
     const [email, setEmail] = useState("");
     const [senha, setSenha] = useState("");
 
-    async function handleLogin(){
-        
-        try {
-            await authService.login(email, senha)
-        } catch (error) {
-            console.log(error);
-        }
+    const handleSubmit = (e) => {
+        e.preventDefault();
 
+        console.log("submit", {email, senha});
+        login(email, senha);
     }
-
-    var altura = window.innerHeight
-    var largura = window.innerWidth
-    console.log("altura:" + altura)
-    console.log("largura:" + largura)
 
     return (
     // <div className='body-login'>
@@ -37,10 +24,11 @@ function Login(){
     // </div>
     <div>
         <h1> Login </h1>
-        <form>
-            <input value={email} onChange={(exemplo)=>setEmail(exemplo.target.value)} placeholder='Email'></input>
-            <input value={senha} onChange={(exemplo)=>setSenha(exemplo.target.value)} placeholder='Senha'></input>
-            <button onClick={ handleLogin }>Entrar</button>
+        <p>{String(authenticated)}</p>
+        <form onSubmit={handleSubmit}>
+            <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email'></input>
+            <input value={senha} onChange={(e) => setSenha(e.target.value)} placeholder='Senha'></input>
+            <button type="submit">Entrar</button>
         </form>
     </div>
 
