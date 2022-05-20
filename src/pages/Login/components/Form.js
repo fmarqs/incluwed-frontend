@@ -10,13 +10,13 @@ function Form() {
       <div id="header-form-title"></div>
       <div id="header-form-logo"></div>
       <section id="info-form">Preencha suas informações</section>
-      {/* <form className="formulario">
-        <input id="login" className="login" placeholder="Digite seu email"></input>
-        <input id="senha" className="senha" placeholder="Digite sua senha"></input>
+      <form className="formulario">
+        <input className="input-login" placeholder="Digite seu email"></input>
+        <input className="input-senha" placeholder="Digite sua senha"></input>
         <a className="recuperar-senha">Esqueceu sua senha?</a>
-        <Link to="/"><button id="entrar" class="login-botao entrar"><section>ENTRAR</section></button></Link>
-        <Link to="/sign-up" ><button className="login-botao cadastrar"><section>CADASTRE-SE</section></button></Link>
-      </form>  */}
+        <Link to="/"><button id="entrar" className="botao-form"><section></section></button></Link>
+        <Link to="/sign-up" ><button id="cadastrar" className="botao-form"><section></section></button></Link>
+      </form> 
       {/* <Link to="/">retornar a página inicial</Link> */}
 
     </div>
