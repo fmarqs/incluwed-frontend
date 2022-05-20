@@ -2,6 +2,9 @@ import React, { useState, useContext } from 'react';
 import './components/style.css'
 import { AuthContext }  from '../../services/auth';
 
+import Form from './components/Form'
+
+
 function Login(){
     
     const { authenticated, login } = useContext(AuthContext)
@@ -16,21 +19,21 @@ function Login(){
     }
 
     return (
-    // <div className='body-login'>
-    //     {/* <Header/>  */}
-    //     {/* <LineHeader/> */}
-    //     {/* <Logo/> */}
-    //     <Form/>
+        <div className='body-login'>
+            {/* <Header/>  */}
+            {/* <LineHeader/> */}
+            {/* <Logo/> */}
+            <Form/>
+        </div>
+    // <div>
+    //     <h1> Login </h1>
+    //     <p>{String(authenticated)}</p>
+    //     <form onSubmit={handleSubmit}>
+    //         <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email'></input>
+    //         <input value={senha} onChange={(e) => setSenha(e.target.value)} placeholder='Senha'></input>
+    //         <button type="submit">Entrar</button>
+    //     </form>
     // </div>
-    <div>
-        <h1> Login </h1>
-        <p>{String(authenticated)}</p>
-        <form onSubmit={handleSubmit}>
-            <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder='Email'></input>
-            <input value={senha} onChange={(e) => setSenha(e.target.value)} placeholder='Senha'></input>
-            <button type="submit">Entrar</button>
-        </form>
-    </div>
 
     )
 }

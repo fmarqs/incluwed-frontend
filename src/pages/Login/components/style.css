@@ -18,13 +18,15 @@
 #header-form-title {
 
   border: 1px solid red;
-  position: absolute;
-  width: 266px;
-  height: 243px;
- 
+  position: relative;
+  width: 166px;
+  height: 43px;
+  left: 88px;
+  top: 21.96px;
 
   background: url(./images/3.png ) no-repeat;
-  /* background-size: 200px ; */
+  background-size: 166px ;
+
 }
 
 #header-form-logo {
@@ -32,10 +34,29 @@
   position: relative;
   width: 50px;
   height: 50px;
-  left: 0px;
+  left: 254px;
+  top: -30.04px;
+  
+  background: url(./images/4.png) no-repeat;
+  background-size: 50px ;
+}
+
+#info-form {
+  position: relative;
+  width: 246px;
+  height: 40px;
+  left: 77px;
   top: 0px;
 
-  background: url(./images/4.png);
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #000000;
 }
 
 .formulario {
