@@ -21,7 +21,7 @@ class FormularioCadastro extends Component{
                          type="text" 
                          placeholder="Digite sua Senha"
                          className="input_senha"/>
-
+                        <Link></Link>
                         <Link to={"/sign-up2"}><button className="botao_avancar">Avançar</button></Link>
                         
                     </form>
