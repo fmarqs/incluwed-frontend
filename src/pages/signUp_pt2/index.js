@@ -1,16 +1,13 @@
 import React, { Component } from "react";
-// import FormularioCadastro from "./components/FormularioCadastro";
 import FormularioCadastro02 from "./components/FormularioCadastro_pt2";
-
+import "./components/FormularioCadastro_pt2/style.css"
 
 
 class SignUp extends Component{
   render(){
     return (
-      <div>
-        <section>
+      <div className="body_cadastro">
           <FormularioCadastro02/>
-        </section>
       </div>
     );
   }
