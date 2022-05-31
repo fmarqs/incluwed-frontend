@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 class FormularioCadastro extends Component{
@@ -21,7 +22,8 @@ class FormularioCadastro extends Component{
                          placeholder="Digite sua Senha"
                          className="input_senha"/>
 
-                        <button className="botao_avancar">Avançar</button>
+                        <Link to={"/sign-up2"}><button className="botao_avancar">Avançar</button></Link>
+                        
                     </form>
             </div>
         );

@@ -2,7 +2,8 @@ import React, { useState, useContext } from "react"
 import { BrowserRouter, Routes, Route, Navigate} from "react-router-dom"
 import Home from "./pages/Home"
 import Login from "./pages/Login"
-import SignUp from "./pages/signUp"
+import SignUp from "./pages/signUp_pt1"
+import SignUp2 from "./pages/signUp_pt2"
 import {AuthProvider, AuthContext} from './services/auth'
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         </Private>}/>
         <Route path="/" element={<Login/>}/>
         <Route path="/sign-up" element={<SignUp/>}/>
+        <Route path="/sign-up2" element={<SignUp2/>}/>
       </Routes>
     </AuthProvider>
     </BrowserRouter>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import FormularioCadastro from "./components/FormularioCadastro";
-import FormularioCadastro02 from "./components/FormularioCadastro02";
+// import FormularioCadastro02 from "./components/FormularioCadastro02";
 
 
 
