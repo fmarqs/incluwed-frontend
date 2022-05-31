@@ -29,17 +29,16 @@ function WritePost() {
     const [value, setValue] = React.useState(2);
 
     return (
-        <Tooltip title='Adicionar publicação' placement='top'>
         <Button
         id='post'
         sx={{
-          width: 10,
-          height: 40,
-          left: 550,
-          top: -10,
-          background: '#3498DB',
-          boxSizing: 'borderBox',
-          borderRadius: 10
+          position: 'absolute', 
+          width: 57,
+          height: 27,
+          left: 860,
+          top: 56,
+          background: '#FFFFFF',
+          borderRadius: 5
         }}
         variant='contained'
         onClick={handleOpen}
@@ -99,7 +98,6 @@ function WritePost() {
         </Box>
         </Modal>
         </Button>
-        </Tooltip>
     );
 }
 
