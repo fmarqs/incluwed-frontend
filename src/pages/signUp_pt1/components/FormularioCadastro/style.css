@@ -59,88 +59,83 @@
     background-size: 50px ;
 }
 
-.input_email{
-    /*Digite seu e-mail*/
-    position: fixed;
-    width: 171px;
-    height: 30px;
-    left: 561px;
-    top: 193px;
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400px;
-    font-size: 20px;
-    line-height: 30px;
-
-    /*Quadro e-mail*/
-    position: absolute;
-    width: 306px;
-    height: 51.75px;
-    left: 136px;
-    top: 150px;
-
-    background: #FFFFFF;
-    border: 2px solid #172668;
-    border-radius: 70px;
-
-    color: rgba(0, 0, 0, 0.4);
-}
-
-.input_usuario{
-    /* Nome de Usuário */
-
-    position: fixed;
-    width: 172px;
-    height: 30px;
-    left: 561px;
-    top: 285px;
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-
+.input_nome {
     /*Quadro Usuario*/
     position: absolute;
-    width: 306px;
-    height: 51.75px;
-    left: 136px;
-    top: 240px;
+    width: 130px;
+    height: 42.36px;
+    left: 135px;
+    top: 172px;
+
 
     background: #FFFFFF;
     border: 2px solid #172668;
+    box-sizing: border-box;
     border-radius: 70px;
 
 
-    color: rgba(0, 0, 0, 0.4); 
+    /* color: rgba(0, 0, 0, 0.4);  */
+}
+
+.input_sobrenome{
+    /*Quadro Usuario*/
+    position: absolute;
+    width: 154px;
+    height: 42px;
+    left: 287px;
+    top: 172px;
+    
+    background: #FFFFFF;
+    border: 2px solid #172668;
+    box-sizing: border-box;
+    border-radius: 70px;
+}
+
+.input_email{
+    /*Digite seu e-mail*/
+    position: absolute;
+    width: 306px;
+    height: 51.75px;
+    left: 135px;
+    top: 256px;
+    
+    background: #FFFFFF;
+    border: 2px solid #172668;
+    box-sizing: border-box;
+    border-radius: 70px;
 }
 
 .input_senha{
-    position: fixed;
-    width: 177px;
-    height: 30px;
-    left: 561px;
-    top: 377px;
+    position: absolute;
+    width: 306px;
+    height: 51.75px;
+    left: 135px;
+    top: 330px;
+    
+    background: #FFFFFF;
+    border: 2px solid #172668;
+    box-sizing: border-box;
+    border-radius: 70px;
+}
 
-    font-family: 'Poppins';
+.input_nome::placeholder,
+.input_sobrenome::placeholder,
+.input_email::placeholder,
+.input_senha::placeholder{
+    /* Nome */
+    position: relative;
+
+    width: 171px;
+    height: 30px;
+    left: 15px;
+    top: 3px;
+
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-
-    /*Quadro Senha*/
-    position: absolute;
-    width: 306px;
-    height: 51.75px;
-    left: 136px;
-    top: 330px;
-
-    background: #FFFFFF;
-    border: 2px solid #172668;
-    border-radius: 70px;
-
+    /* identical to box height */
 
     color: rgba(0, 0, 0, 0.4);
 }
@@ -151,8 +146,8 @@
     position: absolute;
     width: 208px;
     height: 40px;
-    left: 140px;
-    top: 320px;
+    left: 184px;
+    top: 439px;
  
     background: #172668;
     border-radius: 70px;
@@ -167,13 +162,13 @@
 #avancar section{
     /* border: 1px solid red;   */
     position: relative;
-    width: 148px;
+    width: 108px;
     height: 39px;
     
     background: url(./images/Logotipo\ Confeitaria\ Corações\ 3\ opções.png) no-repeat;
-    background-size: 148px;
+    background-size: 108px;
     
-    left: 12%;
+    left: 22%;
     top: 3.5%;
 }
 
