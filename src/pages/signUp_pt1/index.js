@@ -1,16 +1,12 @@
 import React, { Component } from "react";
 import FormularioCadastro from "./components/FormularioCadastro";
-// import FormularioCadastro02 from "./components/FormularioCadastro02";
-
-
+import "./components/FormularioCadastro/style.css"
 
 class SingUp extends Component{
   render(){
     return (
-      <div>
-        <section>
+      <div className="body_cadastro">
           <FormularioCadastro/>
-        </section>
       </div>
     );
   }
