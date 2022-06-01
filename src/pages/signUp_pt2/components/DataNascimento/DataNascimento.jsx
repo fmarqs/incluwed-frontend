@@ -4,7 +4,7 @@ import "./style.css";
 class DataNascimento extends Component{
     render(){
         return(
-        <div>
+        <section>
             <h1 className="header_nasc">Data de Nascimento:</h1>
 
             <p className="header_input_dia">dia</p>
@@ -24,7 +24,7 @@ class DataNascimento extends Component{
             type="text" 
             placeholder="aaaa"
             className="input_ano"/>
-         </div>
+         </section>
          );
     }
 }

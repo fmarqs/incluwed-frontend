@@ -1,16 +1,16 @@
 .header_nasc{
     /* Data de nascimento: */
 
-    position: fixed;
-    width: 184px;
+    position: absolute;
+    width: 186px;
     height: 40px;
-    left: 521px;
-    top: 186px;
+    left: 110px;
+    top: 100px;
 
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 40px;
     
     letter-spacing: 0.1em;
@@ -22,16 +22,16 @@
 .header_input_dia{
     /* Dia */
 
-    position: fixed;
+    position: absolute;
     width: 36px;
     height: 33px;
-    left: 530px;
-    top: 213px;
+    left: 110px;
+    top: 149px;
 
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 40px;
 
     letter-spacing: 0.1em;
@@ -43,16 +43,16 @@ color: #000000;
 .header_input_mes{
     /* Mês */
 
-    position: fixed;
+    position: absolute;
     width: 36px;
     height: 33px;
-    left: 644px;
-    top: 213px;
+    left: 250px;
+    top: 149px;
 
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 40px;
 
 
@@ -65,16 +65,16 @@ color: #000000;
 .header_input_ano{
     /* Ano */
 
-    position: fixed;
+    position: absolute;
     width: 36px;
     height: 33px;
-    left: 758px;
-    top: 213px;
+    left: 389px;
+    top: 149px;
 
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 40px;
 
 
@@ -101,11 +101,11 @@ color: #000000;
     
     /* Quadro Dia */
 
-    position: fixed;
+    position: absolute;
     width: 89px;
     height: 29px;
-    left: 521px;
-    top: 251px;
+    left: 100px;
+    top: 189px;
 
     background: #FFFFFF;
     border: 2px solid #172668;
@@ -132,11 +132,11 @@ color: #000000;
     
     /* Quadro Mês */
 
-    position: fixed;
+    position: absolute;
     width: 89px;
     height: 29px;
-    left: 635px;
-    top: 251px;
+    left: 240px;
+    top: 189px;
 
     background: #FFFFFF;
     border: 2px solid #172668;
@@ -164,11 +164,11 @@ color: #000000;
     /* Quadro Ano */
 
 
-    position: fixed;
+    position: absolute;
     width: 89px;
     height: 29px;
-    left: 751px;
-    top: 251px;
+    left: 380px;
+    top: 189px;
 
     background: #FFFFFF;
     border: 2px solid #172668;
