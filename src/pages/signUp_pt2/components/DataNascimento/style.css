@@ -4,13 +4,13 @@
     position: absolute;
     width: 186px;
     height: 40px;
-    left: 110px;
-    top: 100px;
+    left: 126px;
+    top: 206px;
 
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 40px;
     
     letter-spacing: 0.1em;
@@ -19,16 +19,16 @@
 
 }
 
-.header_input_dia{
+.header_input_data{
     /* Dia */
 
     position: absolute;
     width: 36px;
     height: 33px;
-    left: 110px;
-    top: 149px;
+    left: 100px;
+    top: 236px;
 
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -40,51 +40,7 @@ color: #000000;
 
 }
 
-.header_input_mes{
-    /* Mês */
-
-    position: absolute;
-    width: 36px;
-    height: 33px;
-    left: 250px;
-    top: 149px;
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 40px;
-
-
-    letter-spacing: 0.1em;
-
-    color: #000000;
-
-}
-
-.header_input_ano{
-    /* Ano */
-
-    position: absolute;
-    width: 36px;
-    height: 33px;
-    left: 389px;
-    top: 149px;
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 40px;
-
-
-    letter-spacing: 0.1em;
-
-    color: #000000;
-
-}
-
-.input_dia{
+.input_data{
     /* dd */
 
     position: fixed;
@@ -93,82 +49,19 @@ color: #000000;
     left: 527px;
     top: 251px;
 
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 30px;
     
-    /* Quadro Dia */
+    /* Quadro Data */
 
     position: absolute;
-    width: 89px;
+    width: 200px;
     height: 29px;
-    left: 100px;
-    top: 189px;
-
-    background: #FFFFFF;
-    border: 2px solid #172668;
-    border-radius: 70px;
-
-    color: rgba(0, 0, 0, 0.4);
-
-}
-
-.input_mes{
-    /* mm */
-    
-    position: fixed;
-    width: 42px;
-    height: 30px;
-    left: 644px;
-    top: 250px;
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    
-    /* Quadro Mês */
-
-    position: absolute;
-    width: 89px;
-    height: 29px;
-    left: 240px;
-    top: 189px;
-
-    background: #FFFFFF;
-    border: 2px solid #172668;
-    border-radius: 70px;
-
-    color: rgba(0, 0, 0, 0.4);
-
-}
-
-.input_ano{
-    /* aaaa */
-
-    position: fixed;
-    width: 55px;
-    height: 30px;
-    left: 757px;
-    top: 248px;
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    
-    /* Quadro Ano */
-
-
-    position: absolute;
-    width: 89px;
-    height: 29px;
-    left: 380px;
-    top: 189px;
+    left: 90px;
+    top: 280px;
 
     background: #FFFFFF;
     border: 2px solid #172668;
