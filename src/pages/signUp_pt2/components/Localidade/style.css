@@ -22,16 +22,16 @@
 .header_input_CEP{
     /* CEP */
 
-    position: fixed;
+    position: absolute;
     width: 48px;
     height: 33px;
-    left: 531px;
-    top: 334px;
+    left: 100px;
+    top: 270px;
 
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 40px;
 
     letter-spacing: 0.1em;
@@ -43,16 +43,16 @@
 .header_input_pais{
     /* País */
 
-    position: fixed;
+    position: absolute;
     width: 36px;
     height: 33px;
-    left: 748px;
-    top: 334px;
+    left: 332px;
+    top: 270px;
 
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 40px;
 
     letter-spacing: 0.1em;
@@ -64,16 +64,16 @@
 .header_input_estado{
     /* Estado */
 
-    position: fixed;
+    position: absolute;
     width: 48px;
     height: 33px;
-    left: 531px;
-    top: 395px;
+    left: 100px;
+    top: 330px;
 
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 40px;
 
     letter-spacing: 0.1em;
@@ -85,16 +85,16 @@
 .header_input_cidade{
     /* Cidade */
 
-    position: fixed;
+    position: absolute;
     width: 48px;
     height: 33px;
-    left: 748px;
-    top: 395px;
+    left: 332px;
+    top: 330px;
 
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 40px;
 
     letter-spacing: 0.1em;
