@@ -1,0 +1,160 @@
+.header_localidade{
+    /* Informar localidade: */
+
+    position: fixed;
+    width: 180px;
+    height: 40px;
+    left: 521px;
+    top: 300px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 40px;
+
+    letter-spacing: 0.1em;
+
+    color: #000000;
+
+}
+
+.header_input_CEP{
+    /* CEP */
+
+    position: fixed;
+    width: 48px;
+    height: 33px;
+    left: 531px;
+    top: 334px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 40px;
+
+    letter-spacing: 0.1em;
+
+    color: #000000;
+
+}
+
+.header_input_pais{
+    /* País */
+
+    position: fixed;
+    width: 36px;
+    height: 33px;
+    left: 748px;
+    top: 334px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 40px;
+
+    letter-spacing: 0.1em;
+
+    color: #000000;
+
+}
+
+.header_input_estado{
+    /* Estado */
+
+    position: fixed;
+    width: 48px;
+    height: 33px;
+    left: 531px;
+    top: 395px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 40px;
+
+    letter-spacing: 0.1em;
+
+    color: #000000;
+
+}
+
+.header_input_cidade{
+    /* Cidade */
+
+    position: fixed;
+    width: 48px;
+    height: 33px;
+    left: 748px;
+    top: 395px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 40px;
+
+    letter-spacing: 0.1em;
+
+    color: #000000;
+
+}
+
+.input_CEP{
+    /* Quadro CEP */
+
+    position: fixed;
+    width: 155px;
+    height: 29px;
+    left: 521px;
+    top: 372px;
+
+    background: #FFFFFF;
+    border: 2px solid #172668;
+    border-radius: 70px;
+}
+
+.input_pais{
+    /* Quadro País */
+
+    position: fixed;
+    width: 155px;
+    height: 29px;
+    left: 734px;
+    top: 372px;
+
+    background: #FFFFFF;
+    border: 2px solid #172668;
+    border-radius: 70px;
+}
+
+.input_estado{
+    /* Quadro Estado */
+
+    position: fixed;
+    width: 155px;
+    height: 29px;
+    left: 521px;
+    top: 433px;
+
+    background: #FFFFFF;
+    border: 2px solid #172668;
+    border-radius: 70px;
+}
+
+.input_cidade{
+    /* Quadro Cidade */
+
+    position: fixed;
+    width: 155px;
+    height: 29px;
+    left: 734px;
+    top: 434px;
+
+    background: #FFFFFF;
+    border: 2px solid #172668;
+    border-radius: 70px;
+}
