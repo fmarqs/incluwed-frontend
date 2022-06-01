@@ -4,55 +4,13 @@
     position: absolute;
     width: 180px;
     height: 40px;
-    left: 110px;
-    top: 220px;
+    left: 126px;
+    top: 301px;
 
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 40px;
-
-    letter-spacing: 0.1em;
-
-    color: #000000;
-
-}
-
-.header_input_CEP{
-    /* CEP */
-
-    position: absolute;
-    width: 48px;
-    height: 33px;
-    left: 100px;
-    top: 270px;
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 40px;
-
-    letter-spacing: 0.1em;
-
-    color: #000000;
-
-}
-
-.header_input_pais{
-    /* País */
-
-    position: absolute;
-    width: 36px;
-    height: 33px;
-    left: 332px;
-    top: 270px;
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 40px;
 
     letter-spacing: 0.1em;
@@ -62,83 +20,120 @@
 }
 
 .header_input_estado{
-    /* Estado */
+    /* estado */
 
     position: absolute;
     width: 48px;
     height: 33px;
     left: 100px;
-    top: 330px;
-
-    font-family: 'Poppins';
+    top: 340px;
+    
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 11px;
     line-height: 40px;
-
+    
     letter-spacing: 0.1em;
-
+    
     color: #000000;
 
 }
 
 .header_input_cidade{
-    /* Cidade */
+    /* cidade */
 
     position: absolute;
     width: 48px;
     height: 33px;
-    left: 332px;
-    top: 330px;
-
-    font-family: 'Poppins';
+    left: 313px;
+    top: 340px;
+    
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 11px;
     line-height: 40px;
-
+    
     letter-spacing: 0.1em;
+    
+    color: #000000;
+    
 
+}
+
+.header_input_bairro{
+    /* bairro */
+
+    position: absolute;
+    width: 48px;
+    height: 33px;
+    left: 100px;
+    top: 395px;
+    
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 40px;
+    /* or 364% */
+    
+    letter-spacing: 0.1em;
+    
     color: #000000;
 
 }
 
-.input_CEP{
-    /* Quadro CEP */
+.header_input_numero{
+    /* numemro */
 
     position: absolute;
-    width: 155px;
-    height: 29px;
-    left: 90px;
-    top: 310px;
+    width: 48px;
+    height: 33px;
+    left: 391px;
+    top: 395px;
+    
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 40px;
+    
+    letter-spacing: 0.1em;
+    
+    color: #000000;
 
-    background: #FFFFFF;
-    border: 2px solid #172668;
-    border-radius: 70px;
 }
 
-.input_pais{
-    /* Quadro País */
+.header_input_rua{
+    /* Rua */
 
     position: absolute;
-    width: 155px;
-    height: 29px;
-    left: 322px;
-    top: 310px;
+    width: 48px;
+    height: 33px;
+    left: 100px;
+    top: 450px;
+    
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 40px;
 
-    background: #FFFFFF;
-    border: 2px solid #172668;
-    border-radius: 70px;
+    letter-spacing: 0.1em;
+    
+    color: #000000;
+    
 }
 
 .input_estado{
-    /* Quadro Estado */
+    /* Quadro estado */
 
     position: absolute;
     width: 155px;
     height: 29px;
     left: 90px;
-    top: 370px;
+    top: 380px;
 
     background: #FFFFFF;
     border: 2px solid #172668;
@@ -146,13 +141,55 @@
 }
 
 .input_cidade{
-    /* Quadro Cidade */
+    /* Quadro cidade */
 
     position: absolute;
     width: 155px;
     height: 29px;
-    left: 322px;
-    top: 370px;
+    left: 303px;
+    top: 380px;
+
+    background: #FFFFFF;
+    border: 2px solid #172668;
+    border-radius: 70px;
+}
+
+.input_bairro{
+    /* Quadro bairro */
+
+    position: absolute;
+    width: 248px;
+    height: 29px;
+    left: 90px;
+    top: 435px;
+
+    background: #FFFFFF;
+    border: 2px solid #172668;
+    border-radius: 70px;
+}
+
+.input_numero{
+    /* Quadro numero */
+
+    position: absolute;
+    width: 77px;
+    height: 29px;
+    left: 381px;
+    top: 435px;
+    
+    background: #FFFFFF;
+    border: 2px solid #172668;
+    border-radius: 70px;
+}
+
+.input_rua{
+     /* Quadro Rua */
+
+    position: absolute;
+    width: 369px;
+    height: 29px;
+    left: 90px;
+    top: 490px;
 
     background: #FFFFFF;
     border: 2px solid #172668;
