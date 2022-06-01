@@ -7,12 +7,16 @@ import { Link } from "react-router-dom";
 class FormularioCadastro_pt2 extends Component{
     render(){
         return(
-                    <form className="form_cadastro02">
-                        <DataNascimento/>
-                        <Localidade/>
-                        <Link to = {"/"}><button className="botao_confirmar">Confirmar</button></Link>
+            <div className="form_cadastro02">
+                <div className="header_form_title"></div>
+                <div className="header_form_logo"></div>
+                <form>
+                    <DataNascimento/>
+                    <Localidade/>
+                    <Link to = {"/"}><button id="confirmar" className="botao_confirmar"><section></section></button></Link>
                         
-                    </form>
+                </form>
+            </div>
         );
     }
 }
