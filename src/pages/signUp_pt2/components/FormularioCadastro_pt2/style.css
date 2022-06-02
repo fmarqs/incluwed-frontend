@@ -1,7 +1,12 @@
+.body_cadastro{
+    padding: 100%;
+    background: #999999;
+}
+
 .form_cadastro02{
     position: absolute;
     width: 575px;
-    height: 512px;
+    height: 613px;
     left: 395px;
     top: 62px;
 
@@ -10,15 +15,59 @@
     border-radius: 40px;
 }
 
+.header_form_title{
+
+    /* border: 1px solid red; */
+    position: relative;
+    width: 166px;
+    height: 43px;
+    left: 180px;
+    top: 21.96px;
+  
+    background: url(./images/3.png ) no-repeat;
+    background-size: 166px ;
+  
+}
+
+.header_form_logo{
+    /* border: 1px solid red; */
+    position: relative;
+    width: 50px;
+    height: 50px;
+    left: 335px;
+    top: -30.04px;
+    
+    background: url(./images/4.png) no-repeat;
+    background-size: 50px ;
+}
+
 .botao_confirmar{
     /* Botão Confirmar */
 
-    position: fixed;
+    position: absolute;
     width: 208px;
     height: 40px;
-    left: 579px;
-    top: 491px;
+    left: 140px;
+    top: 320px;
 
     background: #172668;
     border-radius: 70px;
+}
+
+#confirmar{
+    left: 180px;
+    top: 550px;
+}
+
+#confirmar section{
+    /* border: 1px solid red;   */
+    position: relative;
+    width: 148px;
+    height: 39px;
+    
+    background: url(./images/Logotipo\ Confeitaria\ Corações\ 3\ opções\ \(1\).png) no-repeat;
+    background-size: 148px;
+    
+    left: 12%;
+    top: 3.5%;
 }
