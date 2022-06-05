@@ -1,0 +1,174 @@
+.body_cadastro{
+    padding: 100%;
+    background: #999999;
+}
+
+.form_cadastro{
+    position: absolute;
+    width: 575px;
+    height: 512px;
+    left: 395px;
+    top: 62px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 50px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+}
+
+.header_form_title{
+
+    /* border: 1px solid red; */
+    position: relative;
+    width: 166px;
+    height: 43px;
+    left: 180px;
+    top: 21.96px;
+  
+    background: url(./images/3.png ) no-repeat;
+    background-size: 166px ;
+  
+}
+
+.info_form{
+    position: relative;
+    width: 246px;
+    height: 40px;
+    left: 170px;
+    top:-20px;
+  
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.1em;
+  
+    color: #000000;
+  }
+  
+.header_form_logo{
+    /* border: 1px solid red; */
+    position: relative;
+    width: 50px;
+    height: 50px;
+    left: 335px;
+    top: -30.04px;
+    
+    background: url(./images/4.png) no-repeat;
+    background-size: 50px ;
+}
+
+.input_nome {
+    /*Quadro Usuario*/
+    position: absolute;
+    width: 130px;
+    height: 42.36px;
+    left: 135px;
+    top: 172px;
+
+
+    background: #FFFFFF;
+    border: 2px solid #172668;
+    box-sizing: border-box;
+    border-radius: 70px;
+
+
+    /* color: rgba(0, 0, 0, 0.4);  */
+}
+
+.input_sobrenome{
+    /*Quadro Usuario*/
+    position: absolute;
+    width: 154px;
+    height: 42px;
+    left: 287px;
+    top: 172px;
+    
+    background: #FFFFFF;
+    border: 2px solid #172668;
+    box-sizing: border-box;
+    border-radius: 70px;
+}
+
+.input_email{
+    /*Digite seu e-mail*/
+    position: absolute;
+    width: 306px;
+    height: 51.75px;
+    left: 135px;
+    top: 256px;
+    
+    background: #FFFFFF;
+    border: 2px solid #172668;
+    box-sizing: border-box;
+    border-radius: 70px;
+}
+
+.input_senha{
+    position: absolute;
+    width: 306px;
+    height: 51.75px;
+    left: 135px;
+    top: 330px;
+    
+    background: #FFFFFF;
+    border: 2px solid #172668;
+    box-sizing: border-box;
+    border-radius: 70px;
+}
+
+.input_nome::placeholder,
+.input_sobrenome::placeholder,
+.input_email::placeholder,
+.input_senha::placeholder{
+    /* Nome */
+    position: relative;
+
+    width: 171px;
+    height: 30px;
+    left: 15px;
+    top: 3px;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.botao_avancar{
+    /* Botão Avançar */
+
+    position: absolute;
+    width: 208px;
+    height: 40px;
+    left: 184px;
+    top: 439px;
+ 
+    background: #172668;
+    border-radius: 70px;
+
+}
+
+#avancar{
+    left: 180px;
+    top: 430px;
+}
+
+#avancar section{
+    /* border: 1px solid red;   */
+    position: relative;
+    width: 108px;
+    height: 39px;
+    
+    background: url(./images/Logotipo\ Confeitaria\ Corações\ 3\ opções.png) no-repeat;
+    background-size: 108px;
+    
+    left: 22%;
+    top: 3.5%;
+}
+

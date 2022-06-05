@@ -1,0 +1,32 @@
+.userCard {
+    position: absolute;
+    width: 232px;
+    height: 351px;
+    left: 110px;
+    top: 0px;
+
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.buttons {
+    position: absolute;
+    width: 232px;
+    height: 32px;
+    top: 191px;
+
+    background: white;
+}
+
+.headerUsername {
+    position: absolute;
+    width: 232px;
+        height: 32px;
+                    top: 100px;
+                   
+                    background: white;
+                    font-weight: 700px;
+                    font-size: 15px;
+                    color: '#000000';
+                    text-align: center;
+}

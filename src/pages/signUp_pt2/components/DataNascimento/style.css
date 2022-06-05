@@ -1,0 +1,72 @@
+.header_nasc{
+    /* Data de nascimento: */
+
+    position: absolute;
+    width: 186px;
+    height: 40px;
+    left: 126px;
+    top: 206px;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 40px;
+    
+    letter-spacing: 0.1em;
+
+    color: #000000;
+
+}
+
+.header_input_data{
+    /* Dia */
+
+    position: absolute;
+    width: 36px;
+    height: 33px;
+    left: 100px;
+    top: 236px;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 40px;
+
+    letter-spacing: 0.1em;
+
+color: #000000;
+
+}
+
+.input_data{
+    /* dd */
+
+    position: fixed;
+    width: 28px;
+    height: 30px;
+    left: 527px;
+    top: 251px;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    
+    /* Quadro Data */
+
+    position: absolute;
+    width: 200px;
+    height: 29px;
+    left: 90px;
+    top: 280px;
+
+    background: #FFFFFF;
+    border: 2px solid #172668;
+    border-radius: 70px;
+
+    color: rgba(0, 0, 0, 0.4);
+
+}

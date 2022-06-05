@@ -1,19 +1,21 @@
-import React from "react";
-import Header from "./components/Header"
-import Feed from "./components/Feed"
-import { makeStyles } from "@material-ui/styles"
-import { Toolbar } from "@material-ui/core"
-import { Container } from "@mui/material"
-import { Box } from "@mui/material"
+import React from 'react';
+import UserCard from '../../components/UserCard';
+import Header from './components/Header'
+import PostCard from '../../components/PostCard'
+import Feed from './components/Feed'
+import Ranking from './components/Ranking'
+import { makeStyles } from '@material-ui/styles'
+import { Container } from '@mui/material'
+import { Box } from '@mui/material'
+import './style.css';
+import WritePost from './components/WritePost';
+import Filter from './components/Filter'
+
 
 const useStyles = makeStyles({
-  root: {
-    display: "flex",
-    flexDirection: "column",
-  },
   main: {
     height: '100vh',
-    display: 'flex',
+    padding: 60,
     width: '1280px',
     margin: '0 auto',
   }
@@ -22,13 +24,16 @@ const useStyles = makeStyles({
 function Home() {
   const classes = useStyles();
   return (
-    <div className={classes.root}>
+    <div>
+        <UserCard/>
         <Header/>
-        <Toolbar className="toolbar"/>
       <main className={classes.main}>
-        <Container maxWidth="lg">
-          <Box display="flex">
-            <Feed />
+      <WritePost/>
+      <Filter/>
+        <Container maxWidth='lg'>
+          <Box display='flex'>
+            <Feed/>
+            <Ranking/>
           </Box>
         </Container>
       </main>

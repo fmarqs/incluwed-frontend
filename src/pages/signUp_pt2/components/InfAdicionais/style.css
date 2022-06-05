@@ -1,0 +1,101 @@
+.header_inf{
+    /* Informações adicionais: */
+
+    position: absolute;
+    width: 186px;
+    height: 40px;
+    left: 126px;
+    top: 90px;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 40px;
+    
+    letter-spacing: 0.1em;
+
+    color: #000000;
+
+}
+
+.header_input_telefone{
+    /* Telefone */
+
+    position: absolute;
+    width: 88px;
+    height: 33px;
+    left: 100px;
+    top: 128px;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 40px;
+
+    letter-spacing: 0.1em;
+
+color: #000000;
+}
+
+.header_input_CPF{
+    /* CPF */
+
+    position: absolute;
+    width: 88px;
+    height: 33px;
+    left: 345px;
+    top: 128px;
+
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 40px;
+
+    letter-spacing: 0.1em;
+
+    color: #000000;
+}
+.input_DDD{
+    /* Quadro DDD */
+
+    position: absolute;
+    width: 48px;
+    height: 29px;
+    left: 90px;
+    top: 169px;
+
+    background: #FFFFFF;
+    border: 2px solid #172668;
+    border-radius: 70px;
+}
+
+.input_telefone{
+    /* Quadro Estado */
+
+    position: absolute;
+    width: 155px;
+    height: 29px;
+    left: 157px;
+    top: 169px;
+
+    background: #FFFFFF;
+    border: 2px solid #172668;
+    border-radius: 70px;
+}
+
+.input_CPF{
+    /* Quadro País */
+
+    position: absolute;
+    width: 120px;
+    height: 29px;
+    left: 338px;
+    top: 169px;
+
+    background: #FFFFFF;
+    border: 2px solid #172668;
+    border-radius: 70px;
+}
