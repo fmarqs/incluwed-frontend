@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import "./style.css";
@@ -6,27 +6,18 @@ import "./style.css";
 const initialValues = {
     email:"",
     nome:"",
+    sobrenome: "",
     senha:""
 }
 
-class FormularioCadastro extends Component{
-    render(){
-        const onSubmit = () => {
-            
-            // post("", user)
-            // .then((response) => setUser(response.data))
-            // .catch((err) =>{ 
-            //     console.error("ops! ocorreu um erro" + err);
-            // });
-            
-        }
+function FormularioCadastro() {
 
         return(
             <div className="form_cadastro">
                 <div className="header_form_title"></div>
                 <div className="header_form_logo"></div>
                 <h1 className="info_form">Informações de Usuario:</h1>
-                <form onSubmit={onSubmit}>
+                <form >
                 
                 <input 
                 type="text" 
@@ -54,6 +45,5 @@ class FormularioCadastro extends Component{
             </div>
         );
     }
-}
 
 export default FormularioCadastro;

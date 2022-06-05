@@ -29,19 +29,14 @@ const rows = [
 function Ranking() {
 
   return (
-    <TableContainer component={Paper} 
-      sx={{
-        border: '1px solid #172668',
-        boxSizing: 'borderBox',
-        borderRadius: '0px 10px 10px 10px',
-        width: 341,
-        height: 530,
-        left: 1220,
-        position: 'fixed'
-      }}
-      >
-      <Table sx={{ minWidth: 300}} aria-label='simple table'>
-        <TableBody>
+    <div>
+    <div className='rankingHeader'>
+    <h className='rankingName'> Ranking </h>
+    </div>
+    <Paper className='ranking'>
+    <TableContainer> 
+      <Table sx={{ minWidth: 300 }}  aria-label='simple table'>
+        <TableBody >
           {rows.map((row) => (
             <TableRow
               key={row.name}
@@ -58,6 +53,8 @@ function Ranking() {
         </TableBody>
       </Table>
     </TableContainer>
+    </Paper>
+    </div>
   );
 }
 

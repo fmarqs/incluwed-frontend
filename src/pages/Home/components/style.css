@@ -3,9 +3,14 @@
 }
 
 .header {
-  background: #f6f2e6;
-  width: 100%;
-  position: fixed;
+  position: absolute;
+  width: 600px;
+  height: 37px;
+  left: 399px;
+  top: 0px;
+
+  background: #FFFFFF;
+  border-radius: 5px;
   
 }
 
@@ -17,16 +22,18 @@
 }
 
 .titleHeader {
-  width: 220px;
-  height: 45px;
-  left: 37px;
-  top: 18px;
-  font-family: 'Secular One', sans-serif;
+  position: absolute;
+  width: 154px;
+  height: 43px;
+  left: 10px;
+  top: 5px;
+
   font-style: normal;
-  font-weight: 700;
-  font-size: 25px;
-  letter-spacing: 0.4em;
-  color: #172668;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+
+  color: #000000;
 }
 
 .main {
@@ -34,4 +41,43 @@
   display: flex;
   width: 1280px;
   margin: 0 auto;
+}
+
+.rankingHeader {
+  position: absolute;
+  width: 260px;
+  height: 40px;
+  left: 1042px;
+  top: -2px;
+
+  background: #FFFFFF;
+}
+
+.ranking {
+  position: absolute;
+  width: 260px;
+  height: 530px;
+  left: 1042px;
+  top: 30px;
+  
+  background: #FFFFFF;
+}
+
+.rankingName {
+  position: absolute;
+  width: 150px;
+  height: 35px;
+  left: 100px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
