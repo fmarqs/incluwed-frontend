@@ -17,3 +17,16 @@
 
     background: white;
 }
+
+.headerUsername {
+    position: absolute;
+    width: 232px;
+        height: 32px;
+                    top: 100px;
+                   
+                    background: white;
+                    font-weight: 700px;
+                    font-size: 15px;
+                    color: '#000000';
+                    text-align: center;
+}

@@ -1,26 +1,22 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PostCard from '../../../components/PostCard';
-
-const posts = [
-  {
-    id: 1,
-    author: {
-      id: 1,
-      name: 'Fernando Marques',
-      username: 'fmrqs',
-      avatar: 'images/avatars/black.jpg',
-    },
-    place: 'Centro de Informática',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus lalalalallalaaaaaa',
-    date: 'April 02, 2022',
-  },
-];
+import { api } from '../../../api/api';
 
 function Feed() {
+  const [posts, setPosts] = useState([]);
+
+  const id = localStorage.getItem('id');
+
+    useEffect(() => {
+        api.get(`posts?pag=0&qtd=10&usuario_id=${id}`).then(({ data }) => {
+            setPosts(data.content)
+        })
+    }, [posts])
+
   return (
     <div>
-      {posts.map((post) => (
-        <PostCard key={post.id} post={post} />
+      {posts.map((post, key) => (
+        <PostCard key={key} post={post} />
       ))}
     </div>
   );

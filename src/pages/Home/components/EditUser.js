@@ -26,7 +26,7 @@ function EditUser() {
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
-    const [user, setUser] = useState([]);
+    const [user, setUser] = useState({});
 
     const id = localStorage.getItem('id');
 
@@ -53,6 +53,7 @@ function EditUser() {
     }
 
     return (
+
         <Button
         sx={{
             position: 'absolute',
@@ -141,6 +142,7 @@ function EditUser() {
                 color: '#172668',
                 }}
                 variant='outlined'
+                onClick={handleOpen}
             >
             Cancelar
             </Button>
