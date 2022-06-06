@@ -23,7 +23,6 @@ function Form() {
       <div id="header-form-title"></div>
       <div id="header-form-logo"></div>
       <section id="info-form">Preencha suas informações</section>
-      { <p>{String(authenticated)}</p> }
       <form onSubmit={handleSubmit} className="formulario">
         <input value={email} onChange={(e) => setEmail(e.target.value)} className="input-login" placeholder="Digite seu email"></input>
         <input value={senha} onChange={(e) => setSenha(e.target.value)} className="input-senha" placeholder="Digite sua senha"></input>
