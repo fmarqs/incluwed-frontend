@@ -14,7 +14,8 @@ const initialValues = {
     titulo: '',
     nomeLocal: '',
     enderecoLocal: '',
-    texto: ''
+    texto: '',
+    nota: null
 }
 
 const style = {
@@ -34,12 +35,13 @@ function WritePost() {
     const handleClose = () => setOpen(false);
     const [post, setPost] = useState(initialValues)
 
-    const [value, setValue] = React.useState(2);
+    const [value, setValue] = React.useState(0);
 
     const id = localStorage.getItem('id')
 
     function onSubmit(e) {
         e.preventDefault()
+        post.nota = value;
 
         api.post(`users/${id}/posts`, post).then(() => {
             handleClose()        
@@ -50,6 +52,7 @@ function WritePost() {
         const {name, value} = e.target
         setPost({...post, [name]:value})
     }
+
 
 
     return (
@@ -97,7 +100,7 @@ function WritePost() {
                     Avaliação
                 </Typography>
             <Rating
-                name="simple-controlled"
+                name='nota'
                 value={value}
                 onChange={(event, newValue) => {
                 setValue(newValue);

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import './style.css';
 import { Button } from '@mui/material';
 import LogoutIcon from '@mui/icons-material/Logout';
@@ -6,9 +6,15 @@ import { Tooltip } from '@mui/material';
 import { Link } from "react-router-dom";
 import EditUser from '../../pages/Home/components/EditUser';
 import { api } from '../../api/api';
-
+import { AuthContext } from '../../services/auth';
+import { Typography } from '@mui/material';
 
 function UserCard(){
+    const { logout } = useContext(AuthContext)
+
+    const handleLogout = () => {
+      logout();
+    }
     const [user, setUser] = useState({});
 
     const id = localStorage.getItem('id');
@@ -17,15 +23,21 @@ function UserCard(){
         api.get(`users/${id}`).then(({ data }) => {
             setUser(data)
         })
-    }, [user])
+    }, [])
 
     return (
         <div className='userCard'>
             <div className='headerUsername'>
-            <h3> {user?.nome} {user?.sobrenome}</h3>
+            <Typography variant='body1' mt={0} >
+            {user?.nome} {user?.sobrenome}
+            </Typography>
+            <Typography variant='subtitle2' mt={0} >
+            {user?.endereco?.cidade}, {user?.endereco?.estado}
+            </Typography>
             </div>
             <Link to="/home" >
-               <Button sx={{
+               <Button 
+                sx={{
                     position: 'absolute',
                     width: 232,
                     height: 32,
@@ -59,7 +71,9 @@ function UserCard(){
             }}> <EditUser/> </Button>
             <Link to="/" >
             <Tooltip title='Sair' placement='top'>
-            <Button sx={{
+            <Button 
+            onClick={handleLogout}
+            sx={{
                     position: 'absolute',
                     width: 23,
                     height: 28,
