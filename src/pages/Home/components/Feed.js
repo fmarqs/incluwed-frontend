@@ -7,12 +7,13 @@ function Feed() {
 
     useEffect(() => {
         api.get(`posts?pag=0&qtd=10`).then(({ data }) => {
-            setPosts(data.content)
+            setPosts(data.content.reverse())
         })
-    }, [])
+    }, [posts])
 
   return (
     <div>
+        
         {posts.map((post, index) => (
         <PostCard index={index} post={post} />
     ))}

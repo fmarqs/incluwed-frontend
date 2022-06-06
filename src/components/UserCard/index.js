@@ -23,7 +23,7 @@ function UserCard(){
         api.get(`users/${id}`).then(({ data }) => {
             setUser(data)
         })
-    }, [])
+    }, [user])
 
     return (
         <div className='userCard'>
