@@ -44,7 +44,7 @@ function WritePost() {
         post.nota = value;
 
         api.post(`users/${id}/posts`, post).then(() => {
-            handleClose()        
+            handleClose()   
         })
     }
 
@@ -52,8 +52,6 @@ function WritePost() {
         const {name, value} = e.target
         setPost({...post, [name]:value})
     }
-
-
 
     return (
         <Button

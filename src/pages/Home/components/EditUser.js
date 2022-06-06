@@ -53,8 +53,14 @@ function EditUser() {
             <Alert severity="error">This is an error alert — check it out!</Alert>
         })
     }
-    
 
+    const maskString = (str, mask, n) => {
+        return ('' + str).slice(0, -n)
+            .replace(/./g, mask)
+            + ('' + str).slice(-n);
+    }
+
+    
     return (
 
         <Button
@@ -98,7 +104,7 @@ function EditUser() {
                 <TextField id='email' name='email' size='small' placeholder='Email' value={user?.email} onChange={onChange}/>
             </Grid>
             <Grid item xs={6} md={3}>
-                <TextField id='cpf' name='cpf' size='small' placeholder='CPF' value={user?.cpf} onChange={onChange}/> 
+                <TextField id='cpf' name='cpf' size='small' placeholder='CPF' value={maskString(user?.cpf, '*', 5)} onChange={onChange}/> 
             </Grid>
             <Grid item xs={6} md={3}>
                 <TextField id='nascimento' name='nascimento' size='small' placeholder='Nascimento' value={user?.nascimento} onChange={onChange}/> 
