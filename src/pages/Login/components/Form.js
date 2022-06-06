@@ -24,8 +24,8 @@ function Form() {
       <div id="header-form-logo"></div>
       <section id="info-form">Preencha suas informações</section>
       <form onSubmit={handleSubmit} className="formulario">
-        <input value={email} onChange={(e) => setEmail(e.target.value)} className="input-login" placeholder="Digite seu email"></input>
-        <input value={senha} onChange={(e) => setSenha(e.target.value)} className="input-senha" placeholder="Digite sua senha"></input>
+        <input id='login' value={email} onChange={(e) => setEmail(e.target.value)} className="input-login" placeholder="Digite seu email"></input>
+        <input id='senha' value={senha} onChange={(e) => setSenha(e.target.value)} className="input-senha" placeholder="Digite sua senha"></input>
         <a className="recuperar-senha">Esqueceu sua senha?</a>
         <button type="submit" id="entrar" className="botao-form"><section></section></button>
         <Link to="/sign-up" ><button id="cadastrar" className="botao-form"><section></section></button></Link>
