@@ -4,18 +4,16 @@ import Home from "./pages/Home"
 import Login from "./pages/Login"
 import SignUp from "./pages/signUp_pt1"
 import SignUp2 from "./pages/signUp_pt2"
+import Profile from "./pages/Home/components/Profile"
 import {AuthProvider, AuthContext} from './services/auth'
+
 
 function App() {
   const Private = ({children}) => {
-    const { authenticated, loading } = useContext(AuthContext);
+    const { authenticated } = useContext(AuthContext);
 
-    if(loading)
-      return <div className="loading">Loading...</div>;
+    console.log(authenticated)
 
-    if(authenticated)
-      return <Navigate to='/home'/>
-    
     return children
   }
 
@@ -28,6 +26,7 @@ function App() {
         <Private>
           <Home/>
         </Private>}/>
+        <Route path="/profile" element={<Profile/>}/>
         <Route path="/" element={<Login/>}/>
         <Route path="/sign-up" element={<SignUp/>}/>
         <Route path="/sign-up2" element={<SignUp2/>}/>

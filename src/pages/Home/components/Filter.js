@@ -4,10 +4,10 @@ import { IconButton } from '@mui/material'
 import { Tooltip } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 
-
 function Filter(){
+
     return (
-        <Tooltip title='Filtrar' placement='top'>
+        <Tooltip title='Pesquisar' placement='top'>
         <Button
         sx={{
             position: 'absolute',

@@ -27,12 +27,14 @@ function EditUser() {
     const handleClose = () => setOpen(false);
 
     const [user, setUser] = useState({});
+    const [phone, setPhone] = useState({});
 
     const id = localStorage.getItem('id');
 
     useEffect(() => {
         api.get(`users/${id}`).then(({ data }) => {
             setUser(data)
+            setPhone(data.telefone)
         })
     }, [])
 
@@ -51,6 +53,7 @@ function EditUser() {
             <Alert severity="error">This is an error alert — check it out!</Alert>
         })
     }
+    
 
     return (
 
@@ -106,10 +109,10 @@ function EditUser() {
                 </Typography>
             </Grid>
             <Grid item xs={6} md={6} lg={1}>
-                <TextField id='ddd' size='small' name='ddd' placeholder='DDD' value={user?.telefone?.ddd} onChange={onChange}/>
+                <TextField id='ddd' size='small' name='ddd' placeholder='DDD' value={phone?.ddd} onChange={onChange}/>
             </Grid>
             <Grid item xs={6} md={6}>
-                <TextField id='telefone' name='numero' size='small' placeholder='Telefone' value={user?.telefone?.numero} onChange={onChange}/> 
+                <TextField id='telefone' name='numero' size='small' placeholder='Telefone' value={phone?.numero} onChange={onChange}/> 
             </Grid>
             <Grid item xs={6} md={12}>
                 <Typography id="modal-modal-title" variant="body2" component="h2" sx={{color: '#172668'}}>

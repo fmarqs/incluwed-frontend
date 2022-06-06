@@ -14,16 +14,11 @@ function createData(name, rank) {
 }
 
 const rows = [
-  createData('Centro de Informática', 5.0),
   createData('Shopping', 4.3),
-  createData('Praça da Paz', 4.0),
+  createData('Praça', 4.0),
   createData('UFPB', 3.9),
-  createData('UNIPE', 3.8),
-  createData('Centro de Informática', 5.0),
-  createData('Shopping', 4.3),
-  createData('Praça da Paz', 4.0),
-  createData('UFPB', 3.9),
-  createData('UNIPE', 3.8),
+  createData('Loja de Roupa', 3.8),
+  createData('Centro de Informática', 3.0),
 ];
 
 function Ranking() {

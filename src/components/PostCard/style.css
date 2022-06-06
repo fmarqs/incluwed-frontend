@@ -1,12 +1,12 @@
 .root {    
-    position: absolute;
-    width: 594px;
-    height: 156px;
-    left: 405px;
-    top: 102px;
+    position: relative;
+    width: 605px;
+    left: 230px;
+    top: 40px;
 
     background: #FFFFFF;
     border-radius: 5px;
+    margin-bottom: 5px
 }
 
 .subheader {
