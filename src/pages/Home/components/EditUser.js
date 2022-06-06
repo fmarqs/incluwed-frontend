@@ -27,14 +27,12 @@ function EditUser() {
     const handleClose = () => setOpen(false);
 
     const [user, setUser] = useState({});
-    const [phone, setPhone] = useState({});
 
     const id = localStorage.getItem('id');
 
     useEffect(() => {
         api.get(`users/${id}`).then(({ data }) => {
             setUser(data)
-            setPhone(data.telefone)
         })
     }, [])
 
@@ -53,8 +51,14 @@ function EditUser() {
             <Alert severity="error">This is an error alert — check it out!</Alert>
         })
     }
-    
 
+    const maskString = (str, mask, n) => {
+        return ('' + str).slice(0, -n)
+            .replace(/./g, mask)
+            + ('' + str).slice(-n);
+    }
+
+    
     return (
 
         <Button
@@ -98,7 +102,7 @@ function EditUser() {
                 <TextField id='email' name='email' size='small' placeholder='Email' value={user?.email} onChange={onChange}/>
             </Grid>
             <Grid item xs={6} md={3}>
-                <TextField id='cpf' name='cpf' size='small' placeholder='CPF' value={user?.cpf} onChange={onChange}/> 
+                <TextField id='cpf' name='cpf' size='small' placeholder='CPF' value={maskString(user?.cpf, '*', 5)} onChange={onChange}/> 
             </Grid>
             <Grid item xs={6} md={3}>
                 <TextField id='nascimento' name='nascimento' size='small' placeholder='Nascimento' value={user?.nascimento} onChange={onChange}/> 
@@ -109,10 +113,10 @@ function EditUser() {
                 </Typography>
             </Grid>
             <Grid item xs={6} md={6} lg={1}>
-                <TextField id='ddd' size='small' name='ddd' placeholder='DDD' value={phone?.ddd} onChange={onChange}/>
+                <TextField id='ddd' size='small' name='ddd' placeholder='DDD' value={user?.telefone?.ddd} onChange={onChange}/>
             </Grid>
             <Grid item xs={6} md={6}>
-                <TextField id='telefone' name='numero' size='small' placeholder='Telefone' value={phone?.numero} onChange={onChange}/> 
+                <TextField id='telefone' name='numero' size='small' placeholder='Telefone' value={user?.telefone?.numero} onChange={onChange}/> 
             </Grid>
             <Grid item xs={6} md={12}>
                 <Typography id="modal-modal-title" variant="body2" component="h2" sx={{color: '#172668'}}>
