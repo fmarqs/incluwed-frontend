@@ -156,6 +156,7 @@ function EditUser() {
             </Grid>
             <Grid item xs={6} md={6}>
             <Button
+                id='salvar'
                 onClick={onSubmit}
                 sx={{
                 left: 400,

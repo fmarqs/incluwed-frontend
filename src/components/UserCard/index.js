@@ -51,7 +51,9 @@ function UserCard(){
             }}> Home </Button>
             </Link>
             <Link to="/profile" >
-            <Button sx={{
+            <Button 
+            id='profile-user'
+            sx={{
                     position: 'absolute',
                     width: 232,
                     height: 32,
@@ -72,6 +74,7 @@ function UserCard(){
             <Link to="/" >
             <Tooltip title='Sair' placement='top'>
             <Button 
+            id='logout'
             onClick={handleLogout}
             sx={{
                     position: 'absolute',
